@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -23,24 +21,29 @@ public class Main {
             System.out.println("Числа должны быть от 1 до 10");
             return;
         }
-        int result = 0;
+        
+        int result;
 
         switch (operator) {
             case '+':
                 result = num1 + num2;
+                System.out.println(result);
                 break;
             case '-':
                 result = num1 - num2;
+                System.out.println(result);
                 break;
             case '*':
-                result = num1 * num2;
+                result = (num1 * num2);
+                System.out.println(result);
+                break;
             case '/':
                 result = num1 / num2;
+                System.out.println(result);
                 break;
             default:
                 System.out.println("Неверная операция");
                 return;
         }
-        System.out.println("Результат: " + result);
     }
 }
